@@ -1,0 +1,50 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+build/
+dist/
+
+# --- Virtual environments ---
+ai-env/
+venv/
+.venv/
+env/
+ENV/
+
+# --- Streamlit ---
+.streamlit/
+.streamlit/secrets.toml
+
+# --- Project data: scan results and captured traffic should NOT be committed ---
+# These contain data pulled from whatever you scanned - including lab
+# targets, captured requests/responses, and any secrets/tokens in them.
+soar.db
+soar.db-journal
+captured_traffic.json
+*.mitm
+*.pcap
+
+# --- Playwright ---
+/test-results/
+/playwright-report/
+/playwright/.cache/
+node_modules/
+
+# --- Secrets / env vars ---
+.env
+*.env
+.env.*
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
